@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/favicon-KX_LdTER.png" type="image/png">
     <title>Money Converter</title>
-    <script type="module" crossorigin src="./assets/index-_xmo-v8w.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Eu4xFT3Z.css">
+    <script type="module" crossorigin src="/assets/index-C3we7Uxm.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-t05gA1VY.css">
   </head>
   <body class="page">
     <div id="app">
       <div class="container">
         <h1 class="container__title text-center font-thin w-full">Money Converter</h1>
-        <form class="form">
+        <form class="form" novalidate>
           <fieldset class="fieldset first-value">
-            <input class="numbers" type="text" name="first-value" id="first-value" value="1">
+            <input placeholder="Введи число" class="numbers" type="number" name="first-value" id="first-value" value="" pattern="/^\d+$/">
+            
             <select class="select" name="first" id="first">
 
             </select>
+            <span class="error first-value-error">Вводить можно только числа</span>
           </fieldset>
           
           <fieldset class="fieldset second-value">
-            <input class="numbers" type="text" name="second-value" id="second-value" value="">
+            <input placeholder="Введи число" class="numbers" type="number" name="second-value" id="second-value" value="" pattern="/^\d+$/">
             <select class="select" name="second" id="second">
               
             </select>
+            <span class="error second-value-error">Вводить можно только числа</span>
           </fieldset>
         </form>
 
